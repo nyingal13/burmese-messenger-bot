@@ -13,7 +13,7 @@ GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY')
 
 # URLs for the APIs we will be calling
 MESSENGER_API_URL = f"https://graph.facebook.com/v18.0/me/messages?access_token={PAGE_ACCESS_TOKEN}"
-GEMINI_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-preview-0514:generateContent?key={GEMINI_API_KEY}"
+GEMINI_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={GEMINI_API_KEY}"
 
 @app.route('/', methods=['GET'])
 def home():
